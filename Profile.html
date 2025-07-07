@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="portal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i> Student Portal
+      </div>
+      <nav class="nav-links">
+         <a href="index.html" class="nav-link"
+          ><i class="fas fa-home"></i> Home</a
+        >
+        <a href="Profile.html" class="nav-link"
+          ><i class="fas fa-user"></i> Profile</a
+        >
+        <a href="Project.html" class="nav-link"
+          ><i class="fas fa-lightbulb"></i> Projects</a
+        >
+        <a href="achievements.html" class="nav-link"
+          ><i class="fas fa-trophy"></i> Achievements</a
+        >
+        <a href="Skill.html" class="nav-link"
+          ><i class="fas fa-cogs"></i> Skills</a
+        >
+        <a href="gallery.html" class="nav-link"
+          ><i class="fas fa-images"></i> Gallery</a
+        >
+        <a href="about.html" class="nav-link"
+          ><i class="fas fa-info-circle"></i> About</a
+        >
+
+        <a href="login.html" class="nav-link"
+          ><i class="fas fa-sign-out-alt"></i> Logout</a
+        >
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div class="profile_details">
+          <h2>Student Profile</h2>
+
+          <div class="photo-upload">
+            <h2>Profile Photo</h2>
+            <img src="kunj.png" alt="Profile Preview" class="photo-circle" />
+          </div>
+
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+          <div class="check-inline">
+            <div class="form-group">
+              <label for="city">City:</label>
+              <select id="city" name="city" required>
+                <option value="">-- Select City --</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Surat">Surat</option>
+                <option value="Anand">Anand</option>
+                <option value="Nadiad">Nadiad</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="birthdate">Birthdate:</label>
+              <input type="date" id="birthdate" name="birthdate" required />
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="select your age"
+              />
+            </div>
+          </div>
+
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+            required
+          />
+
+          <label for="collage">Collage:</label>
+          <input
+            type="collage"
+            id="collage"
+            name="collage"
+            placeholder="Enter your collage Name"
+            required
+          />
+
+          <label for="course">Course:</label>
+          <input
+            type="text"
+            id="course"
+            name="course"
+            placeholder="Enter your course"
+            required
+          />
+
+          <label for="skill">Skills:</label>
+          <input
+            type="skill"
+            id="skill"
+            name="skill"
+            placeholder="skill"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
